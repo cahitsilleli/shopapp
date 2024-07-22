@@ -1,0 +1,29 @@
+{
+  "name": "shopapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development PORT=3000 DB_PASSWORD=13579 JWTPRIVATEKEY=mysecretkey nodemon app.js",
+    "prod": "NODE_ENV=production PORT=8080 nodemon app.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "winston": "^3.13.1",
+    "winston-mongodb": "^5.1.1"
+  }
+}
